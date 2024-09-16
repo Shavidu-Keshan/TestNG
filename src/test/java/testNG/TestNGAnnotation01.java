@@ -9,7 +9,7 @@ public class TestNGAnnotation01 {
     public void testCreate(){
         System.out.println("create");
     }
-    @Test(priority = 2)
+    @Test(priority = 2,enabled = false)
     public void testEdit(){
         System.out.println("Edit");
     }
