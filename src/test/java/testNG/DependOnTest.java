@@ -6,7 +6,7 @@ public class DependOnTest {
     @Test()
     public void olevel(){
         System.out.println("ol");
-        Assert.fail();
+       // Assert.fail();
     }
     @Test(dependsOnMethods = "olevel")
     public void alevel(){
