@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/TestNg/TestNG">
+        <classes>
+            <class name="testNG.DependOnTest">
+                <methods>
+                    <include name="olevel"/>
+                    <include name="alevel"/>
+                </methods>
+            </class>
+            <class name="testNG.TestNGAnnotation01">
+                <methods>
+                    <include name="testLogin"/>
+                    <include name="testCreate"/>
+                    <include name="testEdit"/>
+                    <include name="testDelete"/>
+                    <include name="testLogout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
